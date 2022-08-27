@@ -3,6 +3,7 @@ import {Fragment} from 'react'
 import Meals from './components/Meals/Meals';
 import Cart from './components/Cart/Cart';
 import { useState } from 'react';
+import CartProvider from './Store/CartProvider';
 function App() {
   const [isVesible,setisVesible] = useState(false);
   function afficher(){
@@ -12,11 +13,11 @@ function App() {
     setisVesible(false);
   }
   return (
-    <Fragment>
+    <CartProvider>
       {isVesible && <Cart onMask={masquer}/>}
       <Header onShower={afficher}/>
       <Meals/>
-    </Fragment>
+    </CartProvider>
   );
 }
 
