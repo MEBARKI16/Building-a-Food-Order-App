@@ -3,8 +3,8 @@ const CartProvider = props => {
     const addItemToCatHandler = (item) => {};
     const removeItemFromCartHandler = (item) => {};
     const cartContext = {
-        item : [],
-        totalAmount : 0,
+        items : [],
+        totalAmount : 2,
         addItem : addItemToCatHandler,
         removeItem : removeItemFromCartHandler,
     };
