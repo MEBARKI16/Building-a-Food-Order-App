@@ -7,6 +7,8 @@ function Header(props)
 {
      
 return <Fragment>
+
+
      <header className={classes.header}>
       <h1>FoodMeals</h1>
       <HeaderCartButton onClick={props.onShower}/>
